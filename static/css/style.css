@@ -3,13 +3,20 @@ body {
     background:#C0C0C0;
 }
 
+/* Change all headers to appear a set color */
+
+h1, h2, h3, h4, h5 {
+    color:steelblue;
+}
+
 /* Footer class for all pages */
 .footer {
-    position: fixed;
+    position: static;
     bottom: 0px;
     width: 100%;
     height:10%;
     padding:15px 0;
+    margin-top: 30px;
     background-color:grey;
     color:white;
     text-align:center;
@@ -24,10 +31,6 @@ body {
 /* Classes for the landing page */
 
 .landing-text-box {
-    position: absolute;
-    top: 75px;
-    left: 25px;
-    width: 55%;
     padding:20px;
     background-color:white;
     color:grey;
@@ -35,14 +38,32 @@ body {
     overflow:auto;
 }
 
-.landing-linker {
-    position:absolute;
-    top: 75px;
-    right: 25px;
-    width: 40%;
-    padding: 20px;
-    background-color: white;
+/* Classes for visualization pages */
+
+.main-visual-box {
+    background-color:white;
     color:grey;
     border: 5px solid lightblue;
+    padding:20px;
+    overflow:auto;
+}
+
+.chart-visual-box {
+    background-color:white;
+    color:grey;
+    border: 5px solid lightblue;
+    padding:20px;
+    margin-top:30px;
+    margin-right:10px;
+    overflow:auto;
+}
+
+/* Class for comparisons page */
+
+.comparison-box {
+    background-color:white;
+    color:grey;
+    border:5px solid lightblue;
+    padding:20px;
     overflow:auto;
 }

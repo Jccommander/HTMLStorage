@@ -6,7 +6,7 @@
     <title>Welcome to the Data Vizard!</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <!-- Open the body tag -->
 <body>
@@ -48,42 +48,50 @@
     <!-- Above is stock for all pages, below is individual code for this page! -->
     
     <!-- div container for the explanatory paragraph -->
-    <div class="landing-text-box">
-      <h2>Summary: Latitude vs. X</h2>
-      <hr><br>
-      <p>
-        <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="200" style="float: left; margin-right:30px; margin-bottom:30px">
-        The objective of this project was to analyze the changing patterns in weather as one approaches
-        the equator. To accomplish this, we used the OpenWeatherMap API to retrieve data from over 500
-        cities in order to compare and contrast their differences based on their latitude.
-        <br><br>
-        After gathering our desired data, we created visualizations using MatPlotLib to analyze trends across
-        several desired variables, namely temperature, cloudiness, wind speed and humidity to visually show the
-        relationship between latitude and weather.
-        <br><br>
-        This site provides the visualizations and data, along with explanations of trends for each graph. To see
-        these visualizations and their explanations, please click on the desired graph on the right, or navigate
-        to the desired page using the dropdown menu above labeled "plots".
-      </p>
-    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-7">
+          <div class="landing-text-box">
+            <h2>Summary: Latitude vs. X</h2>
+            <hr><br>
+            <p>
+              <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="200" style="float: left; margin-right:30px; margin-bottom:30px">
+              The objective of this project was to analyze the changing patterns in weather as one approaches
+              the equator. To accomplish this, we used the OpenWeatherMap API to retrieve data from over 500
+              cities in order to compare and contrast their differences based on their latitude.
+              <br><br>
+              After gathering our desired data, we created visualizations using MatPlotLib to analyze trends across
+              several desired variables, namely temperature, cloudiness, wind speed and humidity to visually show the
+              relationship between latitude and weather.
+              <br><br>
+              This site provides the visualizations and data, along with explanations of trends for each graph. To see
+              these visualizations and their explanations, please click on the desired graph on the right, or navigate
+              to the desired page using the dropdown menu above labeled "plots".
+            </p>
+          </div>
+        </div>
 
     <!-- div container for the visualization links -->
-    <div class="landing-linker">
-      <h2>Visualizations</h2>
-      <hr><br>
-      <a href="#">
-        <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="140" style="margin-left:10px; margin-bottom:5px;margin-right:5px">
-      </a>
-      <a href="#">
-        <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="140" style="margin-bottom:5px;margin-left:5px">
-      </a>
-      <br>
-      <a href="#">
-        <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="140" style="margin-left:10px; margin-top:5px;margin-right:5px">
-      </a>
-      <a href="#">
-        <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="140" style="margin-top:5px;margin-left:5px">
-      </a>
+        <div class="col-sm-12 col-md-5">
+          <div class="landing-text-box">
+            <h2>Visualizations</h2>
+            <hr><br>
+            <a href="#">
+              <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="135" style="margin-right:5px; margin-bottom:10px;">
+            </a>
+            <a href="#">
+                <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="135" style="margin-left:5px; margin-bottom:10px;">
+            </a>
+            <br>
+            <a href="#">
+                <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="135" style="margin-right:5px; margin-top:10px;">
+            </a>
+            <a href="#">
+                <img src="https://alaskabirchsyrup.com/wp-content/uploads/2017/08/placeholder-800x550.jpg" height="135" style="margin-left:5px; margin-top:10px;">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Create a div tag for the footer to display at the bottom of the page, using css to style it -->
