@@ -67,3 +67,11 @@ h1, h2, h3, h4, h5 {
     padding:20px;
     overflow:auto;
 }
+
+/* Media query for changing the navbar coloration when the screen resolution is smaller than 600 px */
+
+@media (max-width: 600px) {
+    .my-navbar-small {
+        background-color:lightblue;
+    }
+}
