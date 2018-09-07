@@ -3,7 +3,7 @@
 <html lang="us-en">
 <head>
     <!-- Set the title for the page, the meta charset, and link the CSS style sheets -->
-    <title>Data Comparisons</title>
+    <title>Wind Speed Visualization</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
@@ -45,30 +45,55 @@
       </div>
     </nav>
     
-    <!-- Above is stock for all pages, below is individual code for this page! -->
+    <!-- Above is stock for all pages, below is individual code for this page -->
 
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="comparison-box">
-            <h1>Comparison: Latitude vs. X</h1><hr> <!-- Note: Horizontal Ruler -->
-            <div class="col-sm-12 col-md-6">
-              <h2>Temperature</h2>
-              <img src="static/images/fig1.png" height="300" style="margin-bottom:10px">
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h2>Humidity</h2>
-              <img src="static/images/fig2.png" height="300" style="margin-bottom:10px">
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h2>Cloudiness</h2>
-              <img src="static/images/fig3.png" height="300" style="margin-top:10px">
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h2>Wind Speed</h2>
-              <img src="static/images/fig4.png" height="300" style="margin-top:10px">
-            </div>
+        <div class="col-sm-12 col-md-8">
+          <div class="main-visual-box">
+            <h2>Latitude vs. Wind Speed</h2><hr>
+            <img src="static/images/fig4.png" height="470">
+            <p>In this graph, latitude is compared to wind speed, with wind speed being tracked in miles
+              per hour. As it can be seen, wind speed tends towards the lower side of the graph, with a
+              handful of strong values interspersed. While the relationship is not one to one, there is a
+              visible trend, in that wind speed seems to be slower the closer one is to the equator, and higher
+              the closer one is to the poles. Also, wind speeds appear to be faster in the northern hemisphere
+              than in the southern hemisphere, though this may be due to the fact that several cities in the northern
+              hemisphere recorded extremely high values.
+              <br><br>
+              While the relationship is not perfect, and data is spread thoroughly across the graph, there is 
+              a natural U-shape to the data which certainly indicates further data collection would be worthwhile,
+              and might establish an interesting correlation between latitude and wind speed.
+            </p>
           </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="chart-visual-box">
+            <h3>Visualization Navigator</h3> <hr> <!-- Note: Horizontal Ruler -->
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="static/images/fig1.png" height="100" style="margin-left:-15px; margin-bottom:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="static/images/fig2.png" height="100" style="margin-left:-15px; margin-bottom:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="static/images/fig3.png" height="100" style="margin-left:-15px; margin-top:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="static/images/fig4.png" height="100" style="margin-left:-15px; margin-top:5px; border: 3px solid lightblue;">
+              </a>
+            </div>
+            <p>Click on a chart above to move to its page</p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -77,7 +102,7 @@
     <div class="footer">
       <p>© Copyright Coding Bootcamp 2018 &ensp;<span class="glyphicon glyphicon-education"></span></p>
     </div>
-    <!-- Add necessary bootstrap javascript elements to allow for dropdown menus! -->
+    <!-- Add necessary bootstrap javascript elements to allow for dropdown menus -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
